@@ -1,0 +1,10 @@
+{
+  "id": "rooot.custom-gamemode-colors",
+  "name": "Custom Gamemode Colors",
+  "developers": [
+    "rooot"
+  ],
+  "description": "Set custom player colors for each gamemode!",
+  "version": "0.1.8",
+  "downloads": 26108
+}

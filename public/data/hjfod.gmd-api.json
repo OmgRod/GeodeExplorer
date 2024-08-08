@@ -1,0 +1,10 @@
+{
+  "id": "hjfod.gmd-api",
+  "name": "GMD API",
+  "developers": [
+    "HJfod"
+  ],
+  "description": "API for working with level files (.gmd)",
+  "version": "1.2.1",
+  "downloads": 134545
+}

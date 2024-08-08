@@ -1,0 +1,10 @@
+{
+  "id": "flafy.autonong",
+  "name": "Auto Nong",
+  "developers": [
+    "Flafy"
+  ],
+  "description": "Automatically download NONG songs for levels",
+  "version": "0.3.0",
+  "downloads": 97773
+}

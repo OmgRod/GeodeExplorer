@@ -1,0 +1,17 @@
+{
+  "id": "geode.custom-keybinds",
+  "name": "Custom Keybinds",
+  "developers": [
+    "Geode Team",
+    "cvolton",
+    "mat",
+    "dankmeme",
+    "qimiko",
+    "Fleym",
+    "ninXout",
+    "HJfod"
+  ],
+  "description": "Custom keybind support for Geode",
+  "version": "1.7.1",
+  "downloads": 338016
+}

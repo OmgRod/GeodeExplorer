@@ -1,0 +1,10 @@
+{
+  "id": "thesillydoggo.comment_emojis",
+  "name": "Emojis in Comments",
+  "developers": [
+    "thesillydoggo"
+  ],
+  "description": "Allows you to post emojis in the comments of levels (and on account posts)",
+  "version": "1.0.1",
+  "downloads": 23210
+}

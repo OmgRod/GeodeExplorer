@@ -1,0 +1,10 @@
+{
+  "id": "omgrod.geodify",
+  "name": "Geodify",
+  "developers": [
+    "OmgRod"
+  ],
+  "description": "Converts most menus' backgrounds to the Geode one (SwelvyBG).",
+  "version": "1.2.1",
+  "downloads": 21100
+}

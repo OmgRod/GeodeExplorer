@@ -1,0 +1,10 @@
+{
+  "id": "sofabeddd.geometry_dash",
+  "name": "Geometry Dash",
+  "developers": [
+    "sofabeddd"
+  ],
+  "description": "Makes the game title a clickable button that plays the \"Geometry Dash\" before the drop in dash.",
+  "version": "1.1.1",
+  "downloads": 21922
+}

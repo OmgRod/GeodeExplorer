@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Geode Explorer</title>
+</head>
+<body>
+    <div class="header">
+        <img src="/assets/geode-pentagon.png" alt="Geode Logo" class="logo">
+        <h1 class="title">Geode Explorer</h1>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Enter the name of a mod...">
+    </div>
+
+    <div id="modList">
+        <% if (modsData && modsData.length > 0) { %>
+            <%- include('partials/mod_list', { mods: modsData }) %>
+        <% } else { %>
+            <p>No mods found.</p>
+        <% } %>
+    </div>
+
+    <script src="/js/scripts.js"></script>
+</body>
+        </html>

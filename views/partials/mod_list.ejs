@@ -1,0 +1,12 @@
+<ul class="mod-list">
+    <% modsData.forEach(mod => { %>
+        <li class="mod-item">
+            <button class="view-btn">View</button>
+            <div class="mod-info">
+                <h2><%= mod.versions[0].name %></h2>
+                <p>By <%= mod.developers.map(dev => dev.display_name).join(' & ') %></p>
+            </div>
+            <img src="/logos/<%= mod.id %>.png" alt="<%= mod.versions[0].name %> Logo" class="mod-logo">
+        </li>
+    <% }); %>
+    </ul>

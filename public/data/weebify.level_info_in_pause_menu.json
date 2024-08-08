@@ -1,0 +1,10 @@
+{
+  "id": "weebify.level_info_in_pause_menu",
+  "name": "Level Info in Pause Menu",
+  "developers": [
+    "Weebify"
+  ],
+  "description": "Adds the level info button to the pause menu",
+  "version": "1.0.5",
+  "downloads": 35021
+}

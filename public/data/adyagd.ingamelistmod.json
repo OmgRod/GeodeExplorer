@@ -1,0 +1,10 @@
+{
+  "id": "adyagd.ingamelistmod",
+  "name": "IngameListMod",
+  "developers": [
+    "adyagmd"
+  ],
+  "description": "Shows the position of a demon/challenge level in the list.",
+  "version": "1.2.0",
+  "downloads": 24039
+}

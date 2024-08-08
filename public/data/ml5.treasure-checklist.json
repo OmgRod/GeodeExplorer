@@ -1,0 +1,10 @@
+{
+  "id": "ml5.treasure-checklist",
+  "name": "Treasure Checklist",
+  "developers": [
+    "ML500"
+  ],
+  "description": "Adds a checklist of your Treasure Room progress",
+  "version": "1.3.0-beta.5",
+  "downloads": 29040
+}

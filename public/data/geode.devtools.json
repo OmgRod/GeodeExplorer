@@ -1,0 +1,17 @@
+{
+  "id": "geode.devtools",
+  "name": "DevTools",
+  "developers": [
+    "Geode Team",
+    "cvolton",
+    "mat",
+    "dankmeme",
+    "qimiko",
+    "Fleym",
+    "ninXout",
+    "HJfod"
+  ],
+  "description": "Developer tools for Geode",
+  "version": "1.7.0",
+  "downloads": 33352
+}

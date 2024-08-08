@@ -1,0 +1,10 @@
+{
+  "id": "cdc.level_thumbnails",
+  "name": "Level Thumbnails",
+  "developers": [
+    "cdc"
+  ],
+  "description": "Adds thumbnails to levels in search.",
+  "version": "1.0.7",
+  "downloads": 46806
+}

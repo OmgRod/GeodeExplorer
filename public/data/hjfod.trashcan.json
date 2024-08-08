@@ -1,0 +1,10 @@
+{
+  "id": "hjfod.trashcan",
+  "name": "Trashcan",
+  "developers": [
+    "HJfod"
+  ],
+  "description": "Puts deleted levels in a trashcan rather than permanently deleting them",
+  "version": "1.0.0",
+  "downloads": 87212
+}

@@ -1,0 +1,10 @@
+{
+  "id": "cgytrus.smooth-particles",
+  "name": "Smooth Particles",
+  "developers": [
+    "ConfiG"
+  ],
+  "description": "Interpolates particle spawn positions between frames to make the game appear smoother in general",
+  "version": "2.2.0",
+  "downloads": 15880
+}

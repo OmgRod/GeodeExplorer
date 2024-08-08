@@ -1,0 +1,10 @@
+{
+  "id": "dogotrigger.deathreplay",
+  "name": "Death Replay",
+  "developers": [
+    "dogotrigger"
+  ],
+  "description": "Shows all of your level deaths while playing it",
+  "version": "1.2.4",
+  "downloads": 19195
+}

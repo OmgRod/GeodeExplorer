@@ -1,0 +1,10 @@
+{
+  "id": "cvolton.level-id-api",
+  "name": "Editor Level ID API",
+  "developers": [
+    "cvolton"
+  ],
+  "description": "Assigns Level IDs to Editor levels that other mods can use to refer to them",
+  "version": "1.0.0",
+  "downloads": 141163
+}

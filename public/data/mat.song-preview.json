@@ -1,0 +1,10 @@
+{
+  "id": "mat.song-preview",
+  "name": "Advanced Song Preview",
+  "developers": [
+    "mat"
+  ],
+  "description": "A tool to view waveforms of local songs.",
+  "version": "1.1.0",
+  "downloads": 18511
+}

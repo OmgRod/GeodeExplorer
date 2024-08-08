@@ -1,0 +1,10 @@
+{
+  "id": "capeling.colored_level_info_bg",
+  "name": "Coloured Level Page",
+  "developers": [
+    "Capeling"
+  ],
+  "description": "Colours the level page based off of the level difficulty",
+  "version": "1.1.0",
+  "downloads": 21780
+}

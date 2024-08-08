@@ -1,0 +1,17 @@
+{
+  "id": "geode.node-ids",
+  "name": "Node IDs",
+  "developers": [
+    "Geode Team",
+    "Fleym",
+    "cvolton",
+    "mat",
+    "dankmeme",
+    "qimiko",
+    "ninXout",
+    "HJfod"
+  ],
+  "description": "Standard node IDs to be used by other mods.",
+  "version": "1.13.1",
+  "downloads": 347272
+}

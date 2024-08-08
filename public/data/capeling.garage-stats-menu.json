@@ -1,0 +1,10 @@
+{
+  "id": "capeling.garage-stats-menu",
+  "name": "Stats Display API",
+  "developers": [
+    "Capeling"
+  ],
+  "description": "Allows mods to easily add custom stats into the icon kit",
+  "version": "1.0.1",
+  "downloads": 21119
+}

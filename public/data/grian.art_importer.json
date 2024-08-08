@@ -1,0 +1,10 @@
+{
+  "id": "grian.art_importer",
+  "name": "Art importer",
+  "developers": [
+    "Grian"
+  ],
+  "description": "This will import pixel art from an image file into the level editor",
+  "version": "1.3.0",
+  "downloads": 20285
+}

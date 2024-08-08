@@ -1,0 +1,10 @@
+{
+  "id": "alphalaneous.pages_api",
+  "name": "Pages API",
+  "developers": [
+    "Alphalaneous"
+  ],
+  "description": "An API to automatically add pages to Quick Search and CreatorLayer",
+  "version": "1.1.11",
+  "downloads": 59608
+}

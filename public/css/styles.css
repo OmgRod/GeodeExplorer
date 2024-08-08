@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #4CAF50;
+}
+
+.logo {
+    height: 80px;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 48px;
+    line-height: 80px;
+    margin: 0;
+    color: white;
+}
+
+.search-bar {
+    margin: 20px 0;
+}
+
+#searchInput {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.mod-list {
+    list-style: none;
+    padding: 0;
+}
+
+.mod-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.mod-info {
+    flex: 1;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.view-btn {
+    padding: 10px 20px;
+    background-image: url('/assets/blueButton.png');
+    background-size: cover;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.view-btn:hover {
+    background-image: url('/assets/blueButton-hover.png'); /* Optionally add a hover state */
+}
+
+.mod-logo {
+    height: 80px;
+    width: auto;
+}

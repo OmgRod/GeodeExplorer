@@ -1,0 +1,10 @@
+{
+  "id": "hjfod.bettersave_recovery",
+  "name": "BetterSave Recovery",
+  "developers": [
+    "HJfod"
+  ],
+  "description": "Recovers levels lost due to BetterSave",
+  "version": "1.0.0",
+  "downloads": 22395
+}

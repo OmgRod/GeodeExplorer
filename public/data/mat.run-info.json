@@ -1,0 +1,10 @@
+{
+  "id": "mat.run-info",
+  "name": "Run Info",
+  "developers": [
+    "mat"
+  ],
+  "description": "Shows info about current run",
+  "version": "1.2.1",
+  "downloads": 99621
+}

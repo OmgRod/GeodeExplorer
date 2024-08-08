@@ -1,0 +1,10 @@
+{
+  "id": "jouca.badgesapi",
+  "name": "Badges API",
+  "developers": [
+    "Jouca"
+  ],
+  "description": "An API to integrate badges in a special menu & optimizing UI",
+  "version": "1.0.6",
+  "downloads": 91444
+}

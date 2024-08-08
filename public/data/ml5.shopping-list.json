@@ -1,0 +1,10 @@
+{
+  "id": "ml5.shopping-list",
+  "name": "Shopping List",
+  "developers": [
+    "ML500"
+  ],
+  "description": "Making sure you have enough Mana Orbs.",
+  "version": "1.0.1",
+  "downloads": 16465
+}

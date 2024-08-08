@@ -1,0 +1,10 @@
+{
+  "id": "kittenchilly.randomize_icon_on_death",
+  "name": "Randomize Icon on Death",
+  "developers": [
+    "kittenchilly"
+  ],
+  "description": "Randomizes your icons and colors everytime you die",
+  "version": "1.2.3",
+  "downloads": 14485
+}

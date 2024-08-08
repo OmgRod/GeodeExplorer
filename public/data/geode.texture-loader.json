@@ -1,0 +1,17 @@
+{
+  "id": "geode.texture-loader",
+  "name": "Texture Loader",
+  "developers": [
+    "Geode Team",
+    "cvolton",
+    "mat",
+    "ninXout",
+    "Fleym",
+    "qimiko",
+    "dankmeme",
+    "HJfod"
+  ],
+  "description": "Texture Pack Manager",
+  "version": "1.6.1",
+  "downloads": 154922
+}

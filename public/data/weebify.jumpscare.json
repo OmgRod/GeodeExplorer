@@ -1,0 +1,10 @@
+{
+  "id": "weebify.jumpscare",
+  "name": "Jumpscare",
+  "developers": [
+    "Weebify"
+  ],
+  "description": "Randomly jumpscares you when you die",
+  "version": "1.3.3",
+  "downloads": 17192
+}
