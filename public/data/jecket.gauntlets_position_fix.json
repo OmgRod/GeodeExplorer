@@ -1,0 +1,10 @@
+{
+  "id": "jecket.gauntlets_position_fix",
+  "name": "Gauntlets Position Fix",
+  "developers": [
+    "Jecket"
+  ],
+  "description": "Fixes the positioning for Gauntlet entries.",
+  "version": "1.0.0",
+  "downloads": 87
+}
