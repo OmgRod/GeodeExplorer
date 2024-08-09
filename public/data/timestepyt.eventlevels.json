@@ -1,0 +1,10 @@
+{
+  "id": "timestepyt.eventlevels",
+  "name": "Event Levels",
+  "developers": [
+    "TimeStepYT"
+  ],
+  "description": "Allows you to use the Event Levels button",
+  "version": "1.0.4",
+  "downloads": 12386
+}

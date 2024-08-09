@@ -1,0 +1,10 @@
+{
+  "id": "dogotrigger.partmanager",
+  "name": "BetterObjects Lite",
+  "developers": [
+    "dogotrigger"
+  ],
+  "description": "Helper tool for mergings parts and copying objects (Public release)",
+  "version": "1.0.3",
+  "downloads": 6074
+}

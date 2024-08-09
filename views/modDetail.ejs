@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= mod.versions[0].name %> - Details</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="mod-detail">
+        <div class="mod-detail-header">
+            <img src="/logos/<%= mod.id %>.png" alt="<%= mod.versions[0].name %> Logo" class="mod-logo-large">
+            <div>
+                <h1><%= mod.versions[0].name %></h1>
+                <p>By <%= mod.developers.map(dev => dev.display_name).join(' & ') %></p>
+                <p>Version: <%= mod.versions[0].version %></p>
+                <p>Downloads: <%= mod.download_count %></p>
+                <p>Released: <%= new Date(mod.versions[0].release_date).toLocaleDateString() %></p>
+                <p>Last Updated: <%= new Date(mod.versions[0].last_update).toLocaleDateString() %></p>
+            </div>
+        </div>
+        <div class="mod-description">
+            <h2>Description</h2>
+            <p><%= mod.versions[0].description %></p>
+        </div>
+        <div class="mod-analytics">
+            <h2>Analytics</h2>
+            <!-- Placeholder for where you might insert analytics charts -->
+            <div class="analytics-chart">
+                <img src="/analytics-chart/<%= mod.id %>.png" alt="Downloads chart">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

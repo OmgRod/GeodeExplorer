@@ -1,0 +1,11 @@
+{
+  "id": "coopeeo.customname",
+  "name": "Custom Name",
+  "developers": [
+    "Cooper",
+    "Roxi"
+  ],
+  "description": "Make yourself have your own name. (Only appears for yourself)",
+  "version": "1.5.4",
+  "downloads": 13240
+}

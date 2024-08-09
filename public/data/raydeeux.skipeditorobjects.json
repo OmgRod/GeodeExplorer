@@ -1,0 +1,11 @@
+{
+  "id": "raydeeux.skipeditorobjects",
+  "name": "SkipEditorObjects",
+  "developers": [
+    "Erymanthus",
+    "iandyhd3"
+  ],
+  "description": "Skips objects of your choice in the Editor UI using txt files.",
+  "version": "1.1.0",
+  "downloads": 1567
+}

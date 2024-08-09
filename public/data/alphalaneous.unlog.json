@@ -1,0 +1,10 @@
+{
+  "id": "alphalaneous.unlog",
+  "name": "Unlog",
+  "developers": [
+    "Alphalaneous"
+  ],
+  "description": "Toggle logs for individual mods",
+  "version": "1.0.1",
+  "downloads": 3434
+}

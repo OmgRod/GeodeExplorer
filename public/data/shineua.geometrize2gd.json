@@ -1,0 +1,10 @@
+{
+  "id": "shineua.geometrize2gd",
+  "name": "Geometrize2GD",
+  "developers": [
+    "Shine"
+  ],
+  "description": "Mod that could convert geometrize json to gd objects",
+  "version": "1.2.2",
+  "downloads": 9913
+}

@@ -1,0 +1,11 @@
+{
+  "id": "raydeeux.controlvanillasfx",
+  "name": "ControlVanillaSFX",
+  "developers": [
+    "Weebify",
+    "Erymanthus"
+  ],
+  "description": "Control the volume of SFX from vanilla GD separately from the volume of SFX from a level's SFX triggers.",
+  "version": "1.3.3",
+  "downloads": 942
+}

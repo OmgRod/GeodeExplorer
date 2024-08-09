@@ -1,0 +1,10 @@
+{
+  "id": "raydeeux.alertlayertweaks",
+  "name": "AlertLayerTweaks",
+  "developers": [
+    "Erymanthus"
+  ],
+  "description": "Modifies FLAlertLayers as you please; mostly to fit more text onto the screen. Useful for mods with long descriptions for their settings.",
+  "version": "1.0.0",
+  "downloads": 1696
+}

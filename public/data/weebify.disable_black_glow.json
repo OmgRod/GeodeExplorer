@@ -1,0 +1,10 @@
+{
+  "id": "weebify.disable_black_glow",
+  "name": "No Force Glow",
+  "developers": [
+    "Weebify"
+  ],
+  "description": "Disable the forced glow when the primary color is black",
+  "version": "1.0.2",
+  "downloads": 4928
+}

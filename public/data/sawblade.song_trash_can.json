@@ -1,0 +1,10 @@
+{
+  "id": "sawblade.song_trash_can",
+  "name": "Song Trash Can",
+  "developers": [
+    "sawblade21"
+  ],
+  "description": "Trash button that deletes a level's songs / SFX.",
+  "version": "1.1.4",
+  "downloads": 1276
+}

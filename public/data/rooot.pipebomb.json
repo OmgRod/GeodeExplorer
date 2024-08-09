@@ -1,0 +1,10 @@
+{
+  "id": "rooot.pipebomb",
+  "name": "Pipe bomb",
+  "developers": [
+    "rooot"
+  ],
+  "description": "Send pipe bombs to your friends!",
+  "version": "0.1.5",
+  "downloads": 6530
+}

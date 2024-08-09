@@ -1,0 +1,10 @@
+{
+  "id": "ata.cat",
+  "name": "Custom Attempt Text",
+  "developers": [
+    "at4pm"
+  ],
+  "description": "Replaces the attempt counter text",
+  "version": "1.0.0",
+  "downloads": 2130
+}

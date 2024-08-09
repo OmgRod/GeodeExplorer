@@ -1,0 +1,10 @@
+{
+  "id": "weebify.index_modder_points",
+  "name": "Index Developer Points",
+  "developers": [
+    "Weebify"
+  ],
+  "description": "A Creator-Points-like system for Geode Mod Developers",
+  "version": "1.0.0",
+  "downloads": 3650
+}

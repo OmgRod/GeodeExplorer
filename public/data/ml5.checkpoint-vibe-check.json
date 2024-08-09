@@ -1,0 +1,10 @@
+{
+  "id": "ml5.checkpoint-vibe-check",
+  "name": "Is \"Disable checkpoints\" on?",
+  "developers": [
+    "ML500"
+  ],
+  "description": "The name is enough to tell what this mod does.",
+  "version": "1.0.0",
+  "downloads": 1394
+}

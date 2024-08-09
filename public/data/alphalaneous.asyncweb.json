@@ -1,0 +1,10 @@
+{
+  "id": "alphalaneous.asyncweb",
+  "name": "AsyncWeb",
+  "developers": [
+    "Alphalaneous"
+  ],
+  "description": "Mod that makes web requests asynchronous.",
+  "version": "0.1.0-alpha.6",
+  "downloads": 5192
+}

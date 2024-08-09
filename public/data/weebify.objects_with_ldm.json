@@ -1,0 +1,10 @@
+{
+  "id": "weebify.objects_with_ldm",
+  "name": "Objects with LDM",
+  "developers": [
+    "Weebify"
+  ],
+  "description": "Shows you the number of objects with LDM enabled in the editor",
+  "version": "1.0.1",
+  "downloads": 5796
+}

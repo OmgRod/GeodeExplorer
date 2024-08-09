@@ -1,0 +1,10 @@
+{
+  "id": "techstudent10.button_sfx",
+  "name": "Button SFX",
+  "developers": [
+    "Tech"
+  ],
+  "description": "Plays a sound effect whenever a button is clicked!",
+  "version": "1.2.0",
+  "downloads": 5754
+}

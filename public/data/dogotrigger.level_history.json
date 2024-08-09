@@ -1,0 +1,10 @@
+{
+  "id": "dogotrigger.level_history",
+  "name": "Level History",
+  "developers": [
+    "dogotrigger"
+  ],
+  "description": "Look and play through deleted and outdated levels using GDHistory or other sources!",
+  "version": "1.1.0",
+  "downloads": 10439
+}

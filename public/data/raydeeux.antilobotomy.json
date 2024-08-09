@@ -1,0 +1,10 @@
+{
+  "id": "raydeeux.antilobotomy",
+  "name": "AntiLobotomy",
+  "developers": [
+    "Erymanthus"
+  ],
+  "description": "Disables difficulty faces, SFX triggers, and Song triggers from loading in levels with titles related to lobotomies.",
+  "version": "1.2.0",
+  "downloads": 1323
+}

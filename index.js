@@ -14,7 +14,7 @@ app.use(express.static('public'));
 let modsData = [];
 
 // Ensure necessary directories exist
-const directories = ['public/data', 'public/analytics', 'public/logos'];
+const directories = ['public/data', 'public/analytics', 'public/logos', 'public/analytics-chart'];
 
 directories.forEach(dir => {
     const dirPath = path.join(__dirname, dir);
@@ -65,54 +65,57 @@ async function fetchMods() {
     try {
         console.log("Fetching mods from Geode Index API...");
 
-        // First request to get the total mod count
-        const initialResponse = await axios.get('https://api.geode-sdk.org/v1/mods', {
-            params: {
-                gd: 2.206,
-                geode: '3.4.0',
-                page: 1,
-                per_page: 1,
-                platforms: 'android64',
-                sort: 'downloads'
+        let page = 1;
+        const perPage = 100; // Fetch 100 mods at a time
+        let totalModsFetched = 0;
+        let totalMods = 0;
+        let modsFetched = [];
+
+        do {
+            // Request to fetch mods
+            const response = await axios.get('https://api.geode-sdk.org/v1/mods', {
+                params: {
+                    gd: 2.206,
+                    geode: '3.4.0',
+                    page: page,
+                    per_page: perPage,
+                    platforms: 'android64',
+                    sort: 'downloads'
+                }
+            });
+
+            // If first page, get the total mods count
+            if (page === 1) {
+                totalMods = response.data.payload.count;
+                console.log(`Total mods available: ${totalMods}`);
             }
-        });
 
-        const totalMods = initialResponse.data.payload.count;
-        console.log(`Total mods available: ${totalMods}`);
+            // Log the response to check the data structure
+            console.log(`Fetching page ${page}: ${response.data.payload.data.length} mods fetched.`);
 
-        // Second request to fetch all mods in one request
-        const response = await axios.get('https://api.geode-sdk.org/v1/mods', {
-            params: {
-                gd: 2.206,
-                geode: '3.4.0',
-                page: 1,
-                per_page: totalMods,
-                platforms: 'android64',
-                sort: 'downloads'
+            // Check if the data is structured as expected
+            if (response.data.payload && Array.isArray(response.data.payload.data)) {
+                modsFetched = response.data.payload.data;
+                modsData.push(...modsFetched);
+                totalModsFetched += modsFetched.length;
+            } else {
+                console.error("Unexpected response structure. Could not find mods array.");
+                return;
             }
-        });
 
-        console.log("API response received.");
+            // Save and log mods data
+            modsFetched.forEach(mod => {
+                saveModData(mod);
+                saveModLogo(mod);
+            });
 
-        // Log the response to check the data structure
-        console.log("Response data:", response.data);
+            // Move to the next page
+            page++;
 
-        // Check if the data is structured as expected
-        if (response.data.payload && Array.isArray(response.data.payload.data)) {
-            modsData = response.data.payload.data;
-        } else {
-            console.error("Unexpected response structure. Could not find mods array.");
-            return;
-        }
+        } while (totalModsFetched < totalMods);
 
-        console.log(`Number of mods fetched: ${modsData.length}`);
-
-        modsData.forEach(mod => {
-            saveModData(mod);
-            saveModLogo(mod);
-        });
-
-        console.log("Initial mod data fetched and saved.");
+        console.log(`Total number of mods fetched: ${totalModsFetched}`);
+        console.log("All mod data fetched and saved.");
     } catch (error) {
         console.error("Error fetching mods:", error.message);
     }
@@ -162,6 +165,18 @@ app.get('/api/mods', (req, res) => {
     const query = req.query.q?.toLowerCase() || '';
     const filteredMods = modsData.filter(mod => mod.versions[0].name.toLowerCase().includes(query));
     res.json(filteredMods);
+});
+
+// Serve the detailed view of a mod
+app.get('/mod/:id', (req, res) => {
+    const modId = req.params.id;
+    const mod = modsData.find(mod => mod.id === modId);
+
+    if (!mod) {
+        return res.status(404).send('Mod not found');
+    }
+
+    res.render('modDetail', { mod });
 });
 
 // Start the server

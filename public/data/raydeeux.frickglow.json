@@ -1,0 +1,10 @@
+{
+  "id": "raydeeux.frickglow",
+  "name": "FrickGlow",
+  "developers": [
+    "Erymanthus"
+  ],
+  "description": "Hides all glow-related objects (including glow from blocks).",
+  "version": "1.3.4",
+  "downloads": 761
+}

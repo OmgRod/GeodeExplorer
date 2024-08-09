@@ -1,0 +1,10 @@
+{
+  "id": "colon.bumpscosity",
+  "name": "Bumpscosity",
+  "developers": [
+    "Colon"
+  ],
+  "description": "Adds an in-game slider to change bumpscosity",
+  "version": "1.0.4",
+  "downloads": 5028
+}

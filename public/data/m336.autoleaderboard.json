@@ -1,0 +1,10 @@
+{
+  "id": "m336.autoleaderboard",
+  "name": "AutoLeaderboard",
+  "developers": [
+    "M336"
+  ],
+  "description": "Automatically update the level leaderboards so that you don't have to do it yourself",
+  "version": "1.0.0",
+  "downloads": 1434
+}

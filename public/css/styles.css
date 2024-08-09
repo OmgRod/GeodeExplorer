@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #4CAF50;
+    background-color: #ad08ff;
 }
 
 .logo {
@@ -35,11 +35,16 @@ body {
     width: 80%;
     padding: 10px;
     font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .mod-list {
     list-style: none;
     padding: 0;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
 }
 
 .mod-item {
@@ -60,9 +65,9 @@ body {
     margin-left: 20px;
 }
 
-.view-btn {
+.mod-item .view-btn {
     padding: 10px 20px;
-    background-image: url('/assets/blueButton.png');
+    background-image: url('https://raw.githubusercontent.com/geode-sdk/geode/main/loader/resources/images/GE_button_01.png');
     background-size: cover;
     color: white;
     border: none;
@@ -71,11 +76,56 @@ body {
     text-transform: uppercase;
 }
 
-.view-btn:hover {
-    background-image: url('/assets/blueButton-hover.png'); /* Optionally add a hover state */
+.mod-item .view-btn:hover {
+    background-image: url('https://raw.githubusercontent.com/geode-sdk/geode/main/loader/resources/images/GE_button_03.png');
 }
 
-.mod-logo {
+.mod-item .mod-logo {
     height: 80px;
     width: auto;
+    border-radius: 5px;
+}
+
+.mod-detail {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.mod-detail-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mod-logo-large {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.mod-description, .mod-analytics {
+    margin-bottom: 20px;
+}
+
+.mod-analytics .analytics-chart {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.analytics-chart img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }

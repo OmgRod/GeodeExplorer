@@ -1,0 +1,10 @@
+{
+  "id": "kart.heartattack",
+  "name": "Heart Attack",
+  "developers": [
+    "kartcs"
+  ],
+  "description": "Gives the player a chance to die of a heart attack.",
+  "version": "1.0.4",
+  "downloads": 3631
+}

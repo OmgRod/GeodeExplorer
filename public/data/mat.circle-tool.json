@@ -1,0 +1,10 @@
+{
+  "id": "mat.circle-tool",
+  "name": "Circle Tool",
+  "developers": [
+    "mat"
+  ],
+  "description": "An editor tool to duplicate and rotate objects.",
+  "version": "1.2.0",
+  "downloads": 12759
+}

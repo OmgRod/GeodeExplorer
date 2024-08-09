@@ -1,0 +1,10 @@
+{
+  "id": "redlime.statchanges",
+  "name": "Stat Changes",
+  "developers": [
+    "RedLime"
+  ],
+  "description": "Displays changed stats during the specified period in the profile.",
+  "version": "1.2.3",
+  "downloads": 8469
+}

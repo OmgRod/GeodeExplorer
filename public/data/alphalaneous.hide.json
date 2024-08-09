@@ -1,0 +1,10 @@
+{
+  "id": "alphalaneous.hide",
+  "name": "hIDe",
+  "developers": [
+    "Alphalaneous"
+  ],
+  "description": "Hide level IDs to prevent level leaks",
+  "version": "1.1.4",
+  "downloads": 2976
+}

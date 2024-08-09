@@ -1,0 +1,10 @@
+{
+  "id": "smjs.gdintercept",
+  "name": "GDIntercept",
+  "developers": [
+    "SMJS"
+  ],
+  "description": "A GD proxy mod which allows you to intercept and modify any communication sent through the Cocos2D-X or Geode web clients.",
+  "version": "0.5.4-alpha.5",
+  "downloads": 13015
+}

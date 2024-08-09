@@ -1,0 +1,10 @@
+{
+  "id": "xanii.auto_music_sync",
+  "name": "Auto Music Sync",
+  "developers": [
+    "Xanii"
+  ],
+  "description": "Automatically syncs the music if you miss a speed portal",
+  "version": "1.0.0",
+  "downloads": 13242
+}

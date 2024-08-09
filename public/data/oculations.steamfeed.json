@@ -1,0 +1,10 @@
+{
+  "id": "oculations.steamfeed",
+  "name": "Steam Feed",
+  "developers": [
+    "thatguynick05"
+  ],
+  "description": "A mod to view Geometry Dash Steam News from the main menu",
+  "version": "1.0.0-beta.4",
+  "downloads": 3230
+}

@@ -1,0 +1,10 @@
+{
+  "id": "zsa.edit-attempts",
+  "name": "Edit Attempts",
+  "developers": [
+    "ZSA"
+  ],
+  "description": "Set level attempts",
+  "version": "1.0.1",
+  "downloads": 12062
+}

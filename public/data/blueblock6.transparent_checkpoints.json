@@ -1,0 +1,10 @@
+{
+  "id": "blueblock6.transparent_checkpoints",
+  "name": "Transparent Checkpoints",
+  "developers": [
+    "BlueBlock6"
+  ],
+  "description": "Allows you to see previous checkpoints in platformer mode and make them fade away",
+  "version": "1.0.3",
+  "downloads": 9248
+}

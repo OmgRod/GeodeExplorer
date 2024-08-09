@@ -1,0 +1,10 @@
+{
+  "id": "iandyhd3.autosort_lists",
+  "name": "AutoSort Lists",
+  "developers": [
+    "iandyhd3"
+  ],
+  "description": "Small tool to auto sort lists based on rating, name, id, etc...",
+  "version": "1.0.0",
+  "downloads": 2110
+}

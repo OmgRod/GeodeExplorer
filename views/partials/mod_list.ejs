@@ -1,7 +1,7 @@
-<ul class="mod-list">
+<ul class="mod-list" id="modList">
     <% modsData.forEach(mod => { %>
         <li class="mod-item">
-            <button class="view-btn">View</button>
+            <button class="view-btn" data-id="<%= mod.id %>">View</button>
             <div class="mod-info">
                 <h2><%= mod.versions[0].name %></h2>
                 <p>By <%= mod.developers.map(dev => dev.display_name).join(' & ') %></p>

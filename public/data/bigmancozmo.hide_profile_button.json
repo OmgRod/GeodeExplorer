@@ -1,0 +1,10 @@
+{
+  "id": "bigmancozmo.hide_profile_button",
+  "name": "Hide Profile Button",
+  "developers": [
+    "bigmancozmo"
+  ],
+  "description": "Hides the profile button from the main menu",
+  "version": "1.3.3",
+  "downloads": 788
+}

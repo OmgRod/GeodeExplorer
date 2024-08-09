@@ -1,0 +1,10 @@
+{
+  "id": "mat.scroll-zoom",
+  "name": "Scroll Zoom",
+  "developers": [
+    "mat"
+  ],
+  "description": "zoom in the editor..",
+  "version": "1.2.0",
+  "downloads": 7543
+}

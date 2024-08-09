@@ -1,0 +1,10 @@
+{
+  "id": "viper.keep_shake",
+  "name": "Keep Shake",
+  "developers": [
+    "Viper"
+  ],
+  "description": "Saves the shake option on a level (when you enable or disable it)",
+  "version": "1.0.1",
+  "downloads": 2737
+}

@@ -1,0 +1,10 @@
+{
+  "id": "raydeeux.likebaitexterminator",
+  "name": "LikeBaitExterminator",
+  "developers": [
+    "Erymanthus"
+  ],
+  "description": "Replaces like-baiting comments with text of your choice.",
+  "version": "1.3.0",
+  "downloads": 996
+}
