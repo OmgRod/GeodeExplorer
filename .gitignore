@@ -131,6 +131,6 @@ dist
 
 
 # my stuffs
-./public/analytics/*
-./public/data/*
-./public/logos/*
+public/analytics/*
+public/data/*
+public/logos/*

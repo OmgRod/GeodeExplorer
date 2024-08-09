@@ -3,33 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= mod.versions[0].name %> - Details</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title><%= mod.versions[0].name %> - Geode Explorer</title>
 </head>
 <body>
+    <div class="header">
+        <img src="https://raw.githubusercontent.com/geode-sdk/geode/main/loader/resources/logos/geode-logo-outline.png" alt="Geode Logo" class="logo">
+        <h1 class="title">Geode Explorer</h1>
+    </div>
+
     <div class="mod-detail">
         <div class="mod-detail-header">
             <img src="/logos/<%= mod.id %>.png" alt="<%= mod.versions[0].name %> Logo" class="mod-logo-large">
             <div>
-                <h1><%= mod.versions[0].name %></h1>
+                <h2><%= mod.versions[0].name %></h2>
                 <p>By <%= mod.developers.map(dev => dev.display_name).join(' & ') %></p>
-                <p>Version: <%= mod.versions[0].version %></p>
-                <p>Downloads: <%= mod.download_count %></p>
-                <p>Released: <%= new Date(mod.versions[0].release_date).toLocaleDateString() %></p>
-                <p>Last Updated: <%= new Date(mod.versions[0].last_update).toLocaleDateString() %></p>
+                <p>Version: <%= mod.version %></p>
+                <p>Downloads: <%= mod.downloads %></p>
             </div>
         </div>
+
         <div class="mod-description">
-            <h2>Description</h2>
-            <p><%= mod.versions[0].description %></p>
+            <h3>Description</h3>
+            <p><%= mod.description %></p>
         </div>
+
         <div class="mod-analytics">
-            <h2>Analytics</h2>
-            <!-- Placeholder for where you might insert analytics charts -->
-            <div class="analytics-chart">
-                <img src="/analytics-chart/<%= mod.id %>.png" alt="Downloads chart">
+            <h3>Analytics</h3>
+            <div class="analytics-controls">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate">
+
+                <label for="startTime">Start Time:</label>
+                <input type="time" id="startTime" name="startTime">
+
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate">
+
+                <label for="endTime">End Time:</label>
+                <input type="time" id="endTime" name="endTime">
             </div>
+            <canvas id="modAnalyticsChart"></canvas>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        // Get the mod ID from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const modId = urlParams.get('id');
+
+        // Function to create or update the chart using Chart.js
+        function createChart(canvas, data) {
+            // Assuming data is an array of objects with 'timestamp' and 'downloads' properties
+            const timestamps = data.map(item => new Date(item.timestamp));
+            const downloads = data.map(item => item.downloads);
+
+            // Create or update the chart
+            const chart = new Chart(canvas, {
+                type: 'line', // or 'bar', 'pie', etc.
+                data: {
+                    labels: timestamps,
+                    datasets: [{
+                        label: 'Downloads',
+                        data: downloads,
+                        borderColor: 'blue',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            type: 'time',
+                            time: {
+                                unit: 'hour' // Or 'day', 'week', etc.
+                            }
+                        },
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        // Add event listeners for date and time selection changes
+        const startDateInput = document.getElementById('startDate');
+        const startTimeInput = document.getElementById('startTime');
+        const endDateInput = document.getElementById('endDate');
+        const endTimeInput = document.getElementById('endTime');
+
+        if (startDateInput && startTimeInput && endDateInput && endTimeInput) {
+            startDateInput.addEventListener('change', updateAnalyticsCharts);
+            startTimeInput.addEventListener('change', updateAnalyticsCharts);
+            endDateInput.addEventListener('change', updateAnalyticsCharts);
+            endTimeInput.addEventListener('change', updateAnalyticsCharts);
+        } else {
+            console.error("Error: One or more input elements not found!");
+        }
+
+        function updateAnalyticsCharts() {
+            const startDate = document.getElementById('startDate').value;
+            const startTime = document.getElementById('startTime').value;
+            const endDate = document.getElementById('endDate').value;
+            const endTime = document.getElementById('endTime').value;
+
+            const chartCanvas = document.getElementById('modAnalyticsChart');
+
+            // Fetch analytics data for the selected time period
+            fetch(`/api/mods/${modId}/analytics?startDate=${startDate}&startTime=${startTime}&endDate=${endDate}&endTime=${endTime}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Create or update the chart
+                    createChart(chartCanvas, data.analyticsData); 
+                })
+                .catch(error => {
+                    console.error('Error fetching analytics data:', error);
+                });
+        }
+
+        // Initial Chart Load
+        fetch(`/api/mods/${modId}/analytics`)
+            .then(response => response.json())
+            .then(data => {
+                const chartCanvas = document.getElementById('modAnalyticsChart');
+                createChart(chartCanvas, data.analyticsData); 
+            })
+            .catch(error => {
+                console.error('Error fetching analytics data:', error);
+            });
+    </script>
 </body>
 </html>

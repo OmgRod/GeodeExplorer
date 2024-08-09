@@ -179,6 +179,43 @@ app.get('/mod/:id', (req, res) => {
     res.render('modDetail', { mod });
 });
 
+// API route to fetch analytics data for a specific mod within a time range
+app.get('/api/mods/:id/analytics', (req, res) => {
+    const modId = req.params.id;
+    const startDate = req.query.startDate;
+    const startTime = req.query.startTime;
+    const endDate = req.query.endDate;
+    const endTime = req.query.endTime;
+
+    const analyticsFilePath = path.join(__dirname, 'public/analytics', `${modId}.ini`);
+    const analyticsData = [];
+
+    try {
+        const fileContent = fs.readFileSync(analyticsFilePath, 'utf-8');
+        const sections = fileContent.split('\n\n');
+
+        sections.forEach(section => {
+            const lines = section.split('\n');
+            const timestamp = lines[0].slice(1, -1); // Extract timestamp from the section header
+            const downloads = parseInt(lines[1].split('=')[1]);
+
+            // Check if the timestamp falls within the selected time range
+            const timestampDate = new Date(timestamp);
+            if (
+                (startDate && timestampDate >= new Date(`${startDate}T${startTime}`)) &&
+                (endDate && timestampDate <= new Date(`${endDate}T${endTime}`))
+            ) {
+                analyticsData.push({ timestamp, downloads });
+            }
+        });
+
+        res.json(analyticsData);
+    } catch (error) {
+        console.error("Error fetching analytics data:", error.message);
+        res.status(500).send('Error fetching analytics data');
+    }
+});
+
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
